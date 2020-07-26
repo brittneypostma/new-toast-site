@@ -23,8 +23,7 @@ exports.prepData = async ({ cacheDir, publicDir }) => {
     slug,
     tags,
     contentType: "blog-post",
-  }));
-
+  }))
   await fs.writeFile(
     path.resolve(publicDir, "src/pages/garden.json"),
     JSON.stringify({ posts: allPostsData })
